@@ -1,0 +1,60 @@
+LIST Scala:
+
+object practice{
+    def main(args:Array[String]){
+        var n=2::(3::(4::(5::Nil)))
+        var m="fruits"::("oranges"::("grapes"::Nil))
+        // println(m.head)
+        // println(m.tail)
+        // println(m.slice(0,2))
+        // println(m.length)
+        // println(m.isEmpty)
+        // println(m.last)
+        // println(m.reverse)
+        // println(n.sum)
+        // println(n.max)
+        // println(n.min)
+        // println(n.product)
+        // println(n.indexOf(5))
+        // println(n.filter(_<4))
+        // n.foreach((e:Int)=>println(e))
+        // var t:List[String]=List.fill(3)("apple")
+        // var k:List[Int]=List.fill(6)(10)
+        // println(t)
+        // println(k)
+    }
+}
+
+
+String Scala:
+
+
+
+
+object practice{
+    def main(args:Array[String]){
+        var a:Array[Int]=Array(25,35,45,55,65,75,85)
+        var b:List[Int]=List(25,35,45,55,65,75,85)
+        var firstindex:Int=0
+        var lastindex:Int=((a.length)-1)
+        var temp1:Int=0
+        var temp2:Int=0
+        while(firstindex < lastindex){
+        temp1=a(firstindex);
+        temp2=a(lastindex);
+        a(firstindex)=temp2;
+        a(lastindex)=temp1;
+        firstindex=firstindex+1
+        lastindex=lastindex-1
+        }
+        
+        a.foreach((e:Int)=>println(e))
+    }
+}
+
+
+
+
+
+
+
